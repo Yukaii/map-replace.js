@@ -1,7 +1,7 @@
 # map-replace.js for VSCode
 
 <p align="center">
-  <img src="doc/images/logo.png" width="250" height="250">
+  <img src="https://cdn.rawgit.com/Yukaii/map-replace.js/7a4fe9b4/doc/images/logo.png" width="250" height="250">
 </p>
 
 <p align="center">
