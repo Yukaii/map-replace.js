@@ -16,17 +16,17 @@ Replace selected string with custom JavaScript function.
 
 ```javascript
 const things = [
-  'Things',
-  'Things',
-  'Things',
-  'Things',
-  'Things',
-  'Things',
-  'Things',
+  'Thing',
+  'Thing',
+  'Thing',
+  'Thing',
+  'Thing',
+  'Thing',
+  'Thing',
 ]
 ```
 
-Enter custom transform function:
+Make selections on all `Thing` strings, call the command and enter custom transform function:
 
 ```javascript
 (value, index) => `${value} #${index}`
@@ -36,13 +36,13 @@ Then generates:
 
 ```javascript
 const things = [
-  'Things #0',
-  'Things #1',
-  'Things #2',
-  'Things #3',
-  'Things #4',
-  'Things #5',
-  'Things #6',
+  'Thing #0',
+  'Thing #1',
+  'Thing #2',
+  'Thing #3',
+  'Thing #4',
+  'Thing #5',
+  'Thing #6',
 ]
 ```
 
