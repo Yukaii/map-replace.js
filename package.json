@@ -7,6 +7,10 @@
     "engines": {
         "vscode": "^1.19.0"
     },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Yukaii/map-replace.js.git"
+    },
     "categories": [
       "Formatters", "Other"
     ],
