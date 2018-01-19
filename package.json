@@ -2,17 +2,18 @@
     "name": "map-replace-js",
     "displayName": "map-replace.js",
     "description": "Replace selected string with custom JavaScript function",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "Yukai",
     "engines": {
         "vscode": "^1.19.0"
     },
     "repository": {
-      "type": "git",
-      "url": "https://github.com/Yukaii/map-replace.js.git"
+        "type": "git",
+        "url": "https://github.com/Yukaii/map-replace.js.git"
     },
     "categories": [
-      "Formatters", "Other"
+        "Formatters",
+        "Other"
     ],
     "activationEvents": [
         "onCommand:extension.mapSelectionWithJsFunc"
@@ -23,11 +24,11 @@
         "theme": "dark"
     },
     "keywords": [
-      "javascript",
-      "map",
-      "function",
-      "replace",
-      "edits"
+        "javascript",
+        "map",
+        "function",
+        "replace",
+        "edits"
     ],
     "main": "./out/extension",
     "contributes": {
