@@ -16,26 +16,24 @@ export function activate(context: vscode.ExtensionContext) {
     let disposable = vscode.commands.registerCommand('extension.mapSelectionWithJsFunc', async () => {
         // The code you place here will be executed every time your command is executed
 
-        const defaultValue = '(v) => v';
+        const defaultValue : string = '(v) => v';
         // Display a message box to the user
-        const func = await vscode.window.showInputBox({
+        const func : string = await vscode.window.showInputBox({
             placeHolder: defaultValue,
             value: defaultValue,
             prompt: 'JavaScript Function'
         });
 
-        const editor: vscode.TextEditor = vscode.window.activeTextEditor;
+        const editor : vscode.TextEditor = vscode.window.activeTextEditor;
 
-        const selections: vscode.Selection[] = editor.selections;
-        const textDocument: vscode.TextDocument = editor.document;
+        const selections : vscode.Selection[] = editor.selections;
+        const textDocument : vscode.TextDocument = editor.document;
         const evalFunc : (any) => any = eval(func);
-        const mappedResults = selections.map(sel => textDocument.getText(sel)).map(evalFunc).map(String);
+        const mappedResults : string[] = selections.map(sel => textDocument.getText(sel)).map(evalFunc).map(String);
 
         editor.edit((builder) => {
-            let replaceRanges : vscode.Selection[] = [];
             selections.forEach((selection, index) => {
-                const replaceText : string = mappedResults[index];
-                builder.replace(selection, replaceText);
+                builder.replace(selection, mappedResults[index]);
             });
         })
     });
