@@ -1,0 +1,11 @@
+root = true
+
+[*]
+indent_size = 2
+indent_style = space
+
+[*.json]
+indent_size = 4
+
+[*.ts]
+indent_size = 4
