@@ -5,12 +5,15 @@
 </p>
 
 <p align="center">
+
 Replace selected string with custom JavaScript function.
 </p>
 
+[![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/v/Yukai.map-replace-js.svg)](https://marketplace.visualstudio.com/items?itemName=Yukai.map-replace-js)
+
 ## Features
 
-![gif](doc/images/map-replace-js.gif)
+![gif](doc/images/map-replace-live-preview.gif)
 
 ### Examples
 
@@ -48,11 +51,12 @@ const things = [
 
 ## TODOs
 
+- [x] Live Preview
 - [ ] custom templates
 
 ## Credits
 
-Idea taken from [@zetavg](https://github.com/zetavg)
+Idea from [@zetavg](https://github.com/zetavg)
 
 ## License
 

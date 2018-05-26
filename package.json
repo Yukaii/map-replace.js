@@ -2,7 +2,7 @@
     "name": "map-replace-js",
     "displayName": "map-replace.js — Replace multi-selection text with custom JavaScript function",
     "description": "Replace multi-selection text with custom JavaScript function",
-    "version": "0.0.3",
+    "version": "0.1.0",
     "publisher": "Yukai",
     "engines": {
         "vscode": "^1.19.0"
