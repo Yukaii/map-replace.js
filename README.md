@@ -9,7 +9,11 @@
 Replace selected string with custom JavaScript function.
 </p>
 
-[![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/v/Yukai.map-replace-js.svg)](https://marketplace.visualstudio.com/items?itemName=Yukai.map-replace-js)
+[![Visual Studio Marketplace](https://badgen.net/vs-marketplace/v/Yukai.map-replace-js)][1]
+[![VS Installs](https://badgen.net/vs-marketplace/i/Yukai.map-replace-js)][1]
+[![VS Rating](https://badgen.net/vs-marketplace/rating/Yukai.map-replace-js)][1]
+
+[1]: https://marketplace.visualstudio.com/items?itemName=Yukai.map-replace-js
 
 ## Features
 
