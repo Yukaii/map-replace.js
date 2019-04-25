@@ -2,7 +2,7 @@
     "name": "map-replace-js",
     "displayName": "map-replace.js — Replace multi-selection text with custom JavaScript function",
     "description": "Replace multi-selection text with custom JavaScript function",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "publisher": "Yukai",
     "engines": {
         "vscode": "^1.19.0"
@@ -44,7 +44,7 @@
             "properties": {
                 "map-replacejs.default": {
                     "type": "string",
-                    "default": "(v, i) => v"
+                    "default": "(v, i) => `${v}`"
                 }
             }
         }
