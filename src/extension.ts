@@ -30,10 +30,10 @@ function validateInputFunction (inputFunctionString: string | undefined) : boole
 }
 
 export function activate(context: vscode.ExtensionContext) {
-    context.subscriptions.push(vscode.commands.registerCommand('extension.mapSelectionWithJsFunc', async () => {
+    context.subscriptions.push(vscode.commands.registerCommand('map-replacejs.mapSelectionWithJsFunc', async () => {
         const editor : vscode.TextEditor = vscode.window.activeTextEditor as vscode.TextEditor;
         let inPreview = false
-        const defaultFunctionString : string = '(v) => v';
+        const defaultFunctionString : string = vscode.workspace.getConfiguration().get('map-replacejs.default') || '(v, i) => v';
         let currentFunctionString = defaultFunctionString
 
         let rangesToReplace:PreviewRangesWithContent[] = editor.selections.sort((a: vscode.Selection, b: vscode.Selection) => { return a.start.compareTo(b.start); }).map(selection => {
@@ -153,7 +153,7 @@ export function activate(context: vscode.ExtensionContext) {
 
         // Display a message box to the user
         const func : string = await vscode.window.showInputBox({
-            placeHolder: defaultFunctionString,
+            placeHolder: '(v, i) => v',
             value: defaultFunctionString,
             prompt: 'JavaScript Function',
             validateInput: inputChanged,

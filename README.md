@@ -53,11 +53,6 @@ const things = [
 ]
 ```
 
-## TODOs
-
-- [x] Live Preview
-- [ ] custom templates
-
 ## Credits
 
 Idea from [@zetavg](https://github.com/zetavg)

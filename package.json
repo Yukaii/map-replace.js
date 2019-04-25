@@ -2,7 +2,7 @@
     "name": "map-replace-js",
     "displayName": "map-replace.js — Replace multi-selection text with custom JavaScript function",
     "description": "Replace multi-selection text with custom JavaScript function",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "publisher": "Yukai",
     "engines": {
         "vscode": "^1.19.0"
@@ -16,7 +16,7 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.mapSelectionWithJsFunc"
+        "onCommand:map-replacejs.mapSelectionWithJsFunc"
     ],
     "icon": "doc/images/icon-128.png",
     "galleryBanner": {
@@ -34,10 +34,20 @@
     "contributes": {
         "commands": [
             {
-                "command": "extension.mapSelectionWithJsFunc",
+                "command": "map-replacejs.mapSelectionWithJsFunc",
                 "title": "Map and Replace Selections with JavaScript Function"
             }
-        ]
+        ],
+        "configuration": {
+            "title": "map-replace.js configuration",
+            "type": "object",
+            "properties": {
+                "map-replacejs.default": {
+                    "type": "string",
+                    "default": "(v, i) => v"
+                }
+            }
+        }
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
