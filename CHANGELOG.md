@@ -1,8 +1,8 @@
 # Change Log
 
-## 0.2.0
+## 0.2.1
 
-- Configurable default function via `map-replacejs.default` key
+- Configurable default function via `map-replacejs.default` key, thanks suggestion from [@yaagma](https://github.com/yaagma)!
 
 ## 0.1.0
 
